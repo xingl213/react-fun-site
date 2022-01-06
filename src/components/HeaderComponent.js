@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import simpsons from '../assets/images/the-simpsons.jpg';
 
 class Header extends Component {
 
@@ -25,7 +26,7 @@ class Header extends Component {
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/"><img src='assets/images/the-simpsons.jpg' height="30" width="41" alt='the simpsons' /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src={simpsons} height="30" width="41" alt='the simpsons' /></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>

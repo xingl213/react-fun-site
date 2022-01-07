@@ -28,7 +28,7 @@ class Header extends Component {
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/"><strong>FUN SITE (●'◡'●)</strong></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar className="justify-content-center nav-pills nav-justified" style={{ width: "100%" }}>
+                            <Nav navbar className="justify-content-center nav-pills nav-justified mt-2" style={{ width: "100%" }}>
                             <NavItem>
                                 <NavLink className="nav-link"  to='/home'>Home (｡･∀･)ﾉﾞ</NavLink>
                             </NavItem>
@@ -42,13 +42,13 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <div className="jumbotron">
+                <div className="jumbotron mt-2">
                     <div className="container">
                         <div className="row">
-                            <h1>Pun of the day O(∩_∩)O</h1>
+                            <h4>Pun of the day O(∩_∩)O</h4>
                         </div>
                         <div className="row">
-                            <div className="pun mt-2 col-12 col-md-4">
+                            <div className="pun col-12 col-md-4">
                               <Button
                                 color="primary"
                                 onClick={() => {this.setState({isPunOneOpen: !this.state.isPunOneOpen});}}

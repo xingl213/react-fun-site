@@ -5,7 +5,7 @@ class Footer extends Component {
 
 	render() {
 		return(
-			<div className="footer">
+			<div className="footer mt-4">
 				<div className="container">
                     <ul className="list-unstyled">
                         <li className="footer-list-item"><Link to='/home'>Home (｡･∀･)ﾉﾞ</Link></li>

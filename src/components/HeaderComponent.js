@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Card, CardBody, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -9,7 +9,8 @@ class Header extends Component {
     
         this.toggleNav = this.toggleNav.bind(this);
         this.state = {
-          isNavOpen: false
+          isNavOpen: false,
+          isPunOpen: false
         };
     }
 
@@ -41,11 +42,30 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <div className="container">
-                    <div className="row row-header">
-                        <div className="col-12 col-sm-6">
-                            <h1>Jumbotron goes here!</h1>
-                            <p>Jumbotron contents go here!</p>
+                <div className="jumbotron">
+                    <div className="container">
+                        <div className="row">
+                            <h1>Pun of the day O(∩_∩)O</h1>
+                        </div>
+                        <div className="row">
+                            <div className="pun mt-2 col-12 col-md-4">
+                              <Button
+                                color="primary"
+                                onClick={() => {this.setState({isPunOneOpen: !this.state.isPunOneOpen});}}
+                                style={{
+                                  marginBottom: '1rem'
+                                }}
+                              >
+                                Why did Adele cross the road?
+                              </Button>
+                              <Collapse isOpen={this.state.isPunOneOpen}>
+                                <Card>
+                                  <CardBody>
+                                    To say hello from the other side.
+                                  </CardBody>
+                                </Card>
+                              </Collapse>
+                            </div>
                         </div>
                     </div>
                 </div>

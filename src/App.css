@@ -31,6 +31,5 @@
 }
 
 .footer-list-item:hover {
-    background-color: white;
-    color: white;
+    background-color: lightskyblue;
 }

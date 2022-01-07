@@ -29,13 +29,13 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="justify-content-center nav-pills nav-justified" style={{ width: "100%" }}>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/home'>Home</NavLink>
+                                <NavLink className="nav-link"  to='/home'>Home (｡･∀･)ﾉﾞ</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/about'>About</NavLink>
+                                <NavLink className="nav-link" to='/about'>About (⊙_⊙)？</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/game'>Game</NavLink>
+                                <NavLink className="nav-link"  to='/game'>Game (～￣▽￣)～</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>

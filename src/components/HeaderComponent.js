@@ -42,7 +42,7 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <div className="jumbotron mt-2">
+                <div className="jumbotron">
                     <div className="container">
                         <div className="row">
                             <h4>Pun of the day O(∩_∩)O</h4>

@@ -8,9 +8,9 @@ class Footer extends Component {
 			<div className="footer mt-4">
 				<div className="container">
                     <ul className="list-unstyled">
-                        <li className="footer-list-item"><Link to='/home'>Home (｡･∀･)ﾉﾞ</Link></li>
-                        <li className="footer-list-item"><Link to='/about'>About (⊙_⊙)？</Link></li>
-                        <li className="footer-list-item"><Link to='/game'>Game (～￣▽￣)～</Link></li>
+                        <li className="footer-list-item rounded"><Link to='/home'>Home (｡･∀･)ﾉﾞ</Link></li>
+                        <li className="footer-list-item rounded"><Link to='/about'>About (⊙_⊙)？</Link></li>
+                        <li className="footer-list-item rounded"><Link to='/game'>Game (～￣▽￣)～</Link></li>
                     </ul>
 				</div>
 				<div className="container copyright">© Copyright 2022 Xing Ling</div>

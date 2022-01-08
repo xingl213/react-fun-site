@@ -7,7 +7,7 @@ class Home extends Component {
 		return(
 			<div className="container mt-2">
 				<div className="row">
-					<h4>Featured movies and iphones games OwO</h4>
+					<h4>Featured movies and mobile games OwO</h4>
 				</div>
 				<UncontrolledCarousel
 				  items={[

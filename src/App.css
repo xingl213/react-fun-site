@@ -11,14 +11,14 @@
 }
 
 .footer{
-    background-color: #000000;
+    background-color: darkslateblue;
     text-decoration-color: #ffffff;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
 
 .navbar-dark {
-    background-color: #000000;
+    background-color: darkslateblue;
 }
 
 .copyright {
@@ -36,4 +36,8 @@
 
 h4 {
     text-align: center;
+}
+
+.jumbotron {
+    background-color: lightcyan;
 }

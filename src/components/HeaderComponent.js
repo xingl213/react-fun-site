@@ -36,7 +36,7 @@ class Header extends Component {
                                 <NavLink className="nav-link" to='/about'>About (⊙_⊙)？</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/game'>Game (～￣▽￣)～</NavLink>
+                                <NavLink className="nav-link"  to='/game'>Trivia (～￣▽￣)～</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>

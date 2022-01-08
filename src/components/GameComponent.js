@@ -1,22 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
-class Game extends Component {
+function Game(props) {
+    const games = props.games.map((game) => {
+        return (
+            <div className="col-12 col-md-4"  key={game.id}>
+				<Card>
+					<Link to={`/game/${game.id}`} >
+		                <CardImg width="100%" src={game.img} alt={game.name} />
+		                <CardImgOverlay>
+		                    <CardTitle>{game.name}</CardTitle>
+		                </CardImgOverlay>
+					</Link>
+				</Card>
+            </div>
+        );
+    });
 
-	render() {
-		return(
+	return(
 		<div className="container">
 			<div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>Game</BreadcrumbItem>
+                    <BreadcrumbItem active>Trivia</BreadcrumbItem>
                 </Breadcrumb>
 			</div>
-			<div className="col-12">Game info goes here!</div>
+			<div className="row">
+				{games}
+			</div>
 		</div>
-		);
-	}
+	);
 }
 
 export default Game;

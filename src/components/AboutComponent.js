@@ -78,7 +78,7 @@ class About extends Component {
 				        ...and practice my new skills
 				      </CardSubtitle>
 				      <CardText>
-				        There you go. I built this single page application using react. I plan to add more components to it, constantly redesign it, and turn it into a place that makes people laugh.
+				        There you go. I built this single page application using react. I plan to add more components to it, constantly redesign it, and turn it into a place that makes me laugh.
 				      </CardText>
 				    </CardBody>
 				  </Card>

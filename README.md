@@ -1,4 +1,4 @@
-# fUN SITE
+# Fun Site
 I built this React single page application to make me laugh!
 
 You are welcomed to visit it [here](https://xingl213.github.io/create-react-app/). (Updated Jan 8, 2022: Although I've finished implementing all major components, gh-pages deployment takes quite a bit of time so the complete version of the application may not be visible through this link yet)

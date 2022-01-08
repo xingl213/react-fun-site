@@ -5,12 +5,12 @@ import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardImgOverlay, CardTitle } 
 function Game(props) {
     const games = props.games.map((game) => {
         return (
-            <div className="col-12 col-md-4"  key={game.id}>
+            <div className="col-12 col-md-4 mt-2"  key={game.id}>
 				<Card>
 					<Link to={`/game/${game.id}`} >
 		                <CardImg width="100%" src={game.img} alt={game.name} />
 		                <CardImgOverlay>
-		                    <CardTitle>{game.name}</CardTitle>
+		                    <CardTitle className="card-title-highlight">{game.name}</CardTitle>
 		                </CardImgOverlay>
 					</Link>
 				</Card>

@@ -7,7 +7,8 @@ class GameDetail extends Component {
 		super(props);
 		this.state = {
 			game: props.game,
-			correctSelect: null
+			correctSelect: null,
+			numberOfGuesses: 0
 		};
 	}
 
@@ -17,16 +18,17 @@ class GameDetail extends Component {
 		} else {
 			this.setState({ correctSelect: false });
 		}
+		this.setState({ numberOfGuesses: this.state.numberOfGuesses + 1 });
 	}
 
 	render() {
 	    const choices = this.state.game.choices.map((choice) => {
 	        return (
-	            <div className="col-12 col-md-6"  key={choice.id}>
+	            <div className="col-12 col-md-6 mt-2"  key={choice.id}>
 					<Card onClick={ () => this.onItemSelect(choice) }>
 		                <CardImg width="100%" src={choice.img} alt={choice.cap} />
 		                <CardImgOverlay>
-		                    <CardTitle>{choice.cap}</CardTitle>
+		                    <CardTitle className="card-title-highlight">{choice.cap}</CardTitle>
 		                </CardImgOverlay>
 					</Card>
 	            </div>
@@ -37,9 +39,11 @@ class GameDetail extends Component {
 	    if (this.state.correctSelect == null) {
 	    	resultMessage = "";
 	    } else if (this.state.correctSelect) {
-	    	resultMessage = "Correct!";
+	    	resultMessage = "Correct! (Number of guesses: ";
+	    	resultMessage = resultMessage.concat(this.state.numberOfGuesses.toString()).concat(")");
 	    } else {
-	    	resultMessage = "Wrong! Guess again!";
+	    	resultMessage = "Wrong! Guess again! (Number of guesses: ";
+	    	resultMessage = resultMessage.concat(this.state.numberOfGuesses.toString()).concat(")");
 	    }
 
 		return (

@@ -98,5 +98,104 @@ export const GAMES =
 						correct: false
 					}
 				]
+		},
+		{
+			id: 3,
+			name: "cutest animal",
+			img: "https://th-thumbnailer.cdn-si-edu.com/rDqS7CQVfpWAjgPXuiKR34oc4Rg=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/a5/a5/a5a5cfff-a4e7-454f-bae2-cfc6c1fed66a/19991130_jab_cs9_163.jpg",
+			question: "Which of the following animals is the cutest TO ME?",
+			choices: 
+				[
+					{
+						id: "a", 
+					 	cap: "panda", 
+						img: "https://images.chinahighlights.com/allpicture/2020/08/826a518ea9fc46d4b5adcc38_cut_800x500_61.jpg", 
+						correct: false
+					},
+					{
+						id: "b", 
+						cap: "puppy", 
+						img: "https://www.akc.org/wp-content/uploads/2021/05/Alaskan-Malamute-puppy-laying-down-outdoors.jpg", 
+						correct: true
+					},
+					{
+						id: "c", 
+						cap: "kitten", 
+						img: "https://imageserver.petsbest.com/marketing/blog/fostering-kittens.jpg", 
+						correct: false
+					},
+					{
+						id: "d", 
+						cap: "bunny", 
+						img: "https://www.petakids.com/wp-content/uploads/2015/11/Cute-Red-Bunny.jpg", 
+						correct: false
+					}
+				]
+		},
+		{
+			id: 4,
+			name: "holiday plan",
+			img: "https://i.guim.co.uk/img/media/c66c25e35b990eb4e3c78ac23440977906e0cfb6/0_0_5506_3304/master/5506.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=628f866382cb9d595818b421f62e8b17",
+			question: "Where have I always wanted to go to for holidays?",
+			choices: 
+				[
+					{
+						id: "a", 
+					 	cap: "antactica", 
+						img: "https://cdn.mos.cms.futurecdn.net/3YtWkM3eghxvYLTTNkuXXg.jpg", 
+						correct: true
+					},
+					{
+						id: "b", 
+						cap: "outer space", 
+						img: "https://cdn.theatlantic.com/thumbor/y0MB46tK2MQJlyxycSLel44b4VY=/0x43:2000x1085/960x500/media/img/mt/2021/09/ElonSpace/original.jpg", 
+						correct: false
+					},
+					{
+						id: "c", 
+						cap: "disney park", 
+						img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F02%2Fdisneyland-resort-california-castle-LANDVSWORLD0120.jpg", 
+						correct: false
+					},
+					{
+						id: "d", 
+						cap: "japan", 
+						img: "https://cdn.cnn.com/cnnnext/dam/assets/170606121226-japan---travel-destination---shutterstock-230107657.jpg", 
+						correct: false
+					}
+				]
+		},
+		{
+			id: 5,
+			name: "superpower",
+			img: "https://goachronicle.com/wp-content/uploads/2021/07/superpower.jpg",
+			question: "What is my favourite superpower?",
+			choices: 
+				[
+					{
+						id: "a", 
+					 	cap: "fly", 
+						img: "https://qph.fs.quoracdn.net/main-qimg-4e2021be82fe10a532e1a8be2f4f39ac", 
+						correct: false
+					},
+					{
+						id: "b", 
+						cap: "invisiblity", 
+						img: "https://images.ctfassets.net/usf1vwtuqyxm/7uv8pXIAKsSmi8uKYM6Csm/0c78a8162cbe6e23cb6b60fecd0c6b5f/HarryPotter_WB_F1_HarryHoldingInvisibilityCloakInGryffindorCommonRoom_Still_100615_Land.jpg", 
+						correct: true
+					},
+					{
+						id: "c", 
+						cap: "super speed", 
+						img: "https://i.ytimg.com/vi/gSubESBcRE4/maxresdefault.jpg", 
+						correct: false
+					},
+					{
+						id: "d", 
+						cap: "shape shifting", 
+						img: "https://s32036.pcdn.co/wp-content/uploads/2020/06/shapeshifting-clean-thumb-scaled.jpg", 
+						correct: false
+					}
+				]
 		}
 	];

@@ -141,7 +141,7 @@ export const GAMES =
 				[
 					{
 						id: "a", 
-					 	cap: "antactica", 
+					 	cap: "antarctica", 
 						img: "https://cdn.mos.cms.futurecdn.net/3YtWkM3eghxvYLTTNkuXXg.jpg", 
 						correct: true
 					},
